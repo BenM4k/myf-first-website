@@ -69,7 +69,10 @@ nav:hover ul li a{
     font-family: 'bebas neue';
 }
 .content p{
+<<<<<<< HEAD
     color: black;
+=======
+>>>>>>> 64b0d2135db57ce37ce8795f70c75aca60587c66
     max-width: 500px;
     line-height: 28px;
     opacity: 0;
