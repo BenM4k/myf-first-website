@@ -67,7 +67,7 @@ nav:hover ul li a{
     font-weight: 600;
     font-family: GeoSansLight;
 }
-content p{
+.content p{
     max-width: 500px;
     line-height: 28px;
     opacity: 0;
