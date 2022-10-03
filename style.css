@@ -13,7 +13,7 @@
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(5,0,136, 0.5),rgba(5,0,136, 0.5)), url(images/pexels-fauxels-3183197.jpg);
+    background-image: url(images/table.jpg);
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
@@ -31,7 +31,7 @@ nav .logo{
     align-items: center;
     font-size: 26px;
     font-weight: 600;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 nav .logo img{
     width: 60px;
@@ -44,45 +44,48 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 500;
 }
 nav:hover{
-    background: #fff;
+    background: rgb(0, 0, 0);
 }
 nav:hover .logo{
-    color: #333;
+    color: rgb(255, 254, 254);
 }
 nav:hover ul li a{
-    color: #333;
+    color: rgb(255, 248, 248);
 }
 .content{
     margin-top: 9%;
     margin-left: 9%;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 .content h1{
+    color: black;
     font-size: 120px;
     line-height: 140px;
     font-weight: 600;
-    font-family: GeoSansLight;
+    font-family: 'bebas neue';
 }
-content p{
+.content p{
+    color: black;
     max-width: 500px;
     line-height: 28px;
     opacity: 0;
+    font-family: 'GeoSansLight';
 }
 .links{
     margin-top: 30px;
     opacity: 0;
 }
 .links a{
-    color:#fff;
+    color:rgb(0, 0, 0);
     text-decoration: none;
     display: inline-block;
 }
 .btn{
-    border: 2px solid #fff;
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px 35px;
     border-radius: 30px;
     margin-right: 15px;
