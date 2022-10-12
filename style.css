@@ -34,3 +34,10 @@ p{
     text-decoration: none;
     display: inline-block;
 }
+
+.nav-link{
+    font-family: 'GeoSansLight';
+}
+.navbar-brand{
+    font-family: 'GeoSansLight';
+}
