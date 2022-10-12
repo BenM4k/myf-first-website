@@ -1,93 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-.title{
-    font-family: GeoSansLight;
-    font-size: 120px;
-    line-height: 140px;
-    font-weight: 600;
-}
-.header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/table.jpg);
-    background-position: center;
-    background-size: cover;
-    overflow-x: hidden;
-}
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 8%;
-    transition: background 1s;
-}
-nav .logo{
-    display: flex;
-    align-items: center;
-    font-size: 26px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-}
-nav .logo img{
-    width: 60px;
-    margin-right: 10px;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-}
-nav:hover{
-    background: rgb(0, 0, 0);
-}
-nav:hover .logo{
-    color: rgb(255, 254, 254);
-}
-nav:hover ul li a{
-    color: rgb(255, 248, 248);
-}
-.content{
-    margin-top: 9%;
-    margin-left: 9%;
-    color: rgb(0, 0, 0);
-}
-.content h1{
-    color: black;
-    font-size: 120px;
-    line-height: 140px;
-    font-weight: 600;
-    font-family: 'bebas neue';
-}
-.content p{
-<<<<<<< HEAD
-    color: black;
-=======
->>>>>>> 64b0d2135db57ce37ce8795f70c75aca60587c66
-    max-width: 500px;
-    line-height: 28px;
-    opacity: 0;
-    font-family: 'GeoSansLight';
-}
-.links{
-    margin-top: 30px;
-    opacity: 0;
-}
-.links a{
-    color:rgb(0, 0, 0);
-    text-decoration: none;
-    display: inline-block;
-}
-.btn{
+.boutton{
     border: 2px solid rgb(0, 0, 0);
     padding: 10px 35px;
     border-radius: 30px;
@@ -111,4 +22,15 @@ p.slide-left{
 }
 .links.slide-left{
     animation-delay: 2s;
+}
+h1{
+    font-family: 'GeoSansLight';
+}
+p{
+    font-family: 'montserrat';
+}
+.links.slide-left a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
 }
