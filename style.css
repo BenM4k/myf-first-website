@@ -175,7 +175,7 @@ header ul li a.active {
         transform: translateX(0px);
         max-width: 100%;
         padding: 30px;
-        margin-top: -40px;
+        margin-top: 24px;
     }
     header {
         position: relative;
