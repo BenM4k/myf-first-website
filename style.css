@@ -207,10 +207,10 @@ header ul li a.active {
     
     @keyframes animate {
         0%,100% {
-            transform: translateY(-20);
+            transform: translateY(-20px);
         }
         50% {
-            transform: translateY(20);
+            transform: translateY(20px);
         }
     }
     .sci {
