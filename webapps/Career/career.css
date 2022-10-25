@@ -1,0 +1,104 @@
+body {
+    background-color: hsl(0, 0%, 90%);
+}
+h1 {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+h1 a {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all -0.15s;
+}
+h1 a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+h1 a:active {
+    opacity: 0.4;
+}
+section {
+    margin-left: 100px;
+    display: inline-block;
+}
+.subtitle {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 100px;
+    width: 440px;
+}
+.subtitle span {
+    font-size: 70px;
+}
+.first {
+    width: 280px;
+    height: 280px;
+    border: 2px;
+    background: blueviolet;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 50px;
+}
+.second{
+    width: 330px;
+    height: 330px;
+    border: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    margin-top: 70px;
+    margin-left: 70px;
+    padding: 20px;
+}
+.third {
+    width: 100px;
+    height: 100px;
+    border: 2px;
+    background: rgb(238, 132, 150);
+    border-radius: 25px;
+    margin-top: 175px;
+    margin-left: 170px;
+    padding: 20px;
+}
+.fourth {
+    width: 200px;
+    height: 200px;
+    border: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: -120px;
+}   
+h2 {
+    margin-left: 100px;
+    margin-top: 120px;
+    
+}
+h2 a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: gray;
+    cursor: none;
+    text-decoration: none;
+    transition: all 0.15s;
+}
+h2 a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+h2 a:active {
+    opacity: 0.4;
+}
