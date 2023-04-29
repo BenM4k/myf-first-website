@@ -1,0 +1,102 @@
+@import './variables';
+
+main {
+    width: 100%;
+    .headline {
+        padding-top: 60px;
+        width: 100%;
+        .presentation {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 13px;
+                box-shadow: 35px 2px 68px 3px rgba(160, 139, 177, 0.42), 
+                inset 0 -8px 16px 0 map-get($map: $oceanic, $key: "primary");
+                
+            padding: 16px;
+            width: 250px;
+            height: 150px;
+            @include flex-align-start(column);
+            gap: 10px;
+
+            h1 {
+                @include big-title;
+            }
+            span {
+                @include paragraph;
+            }
+        }
+    
+        .perf {
+            margin-top: 30px;
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 13px;
+                box-shadow: 35px 2px 68px 3px rgba(160, 139, 177, 0.42), 
+                inset 0 -8px 16px 0 map-get($map: $oceanic, $key: "primary");
+                
+            width: 150px;
+            height: 75px;
+            @include flex-center(row);
+            
+            h2 {
+                @include title;
+            }
+        }
+    
+        .headline-photo {
+            width: 100%;
+            @include flex-center(row);
+
+            img {
+
+            }
+
+            ul {
+                li {
+                    margin-top: 15px;
+                    height: 120px;
+                    width: 120px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    @include flex-center(row);
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+
+                    &:nth-child(2){
+                        margin-left: 50px;
+                        height: 150px;
+                        width: 150px;
+                    }
+                    &:nth-child(3){
+                        height: 90px;
+                        width: 90px;
+
+                        img {
+                            height: 80px;
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+            .main-skill {
+            }
+        }
+    
+        .socials {
+            position: absolute;
+            li {
+                margin-top: 15px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                @include flex-center(row);
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+    }
+}

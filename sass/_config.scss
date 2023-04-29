@@ -8,6 +8,7 @@
 
 body {
   height: 100vh;
+  width: 100vw;
   background: map-get($map: $oceanic, $key: "quaternary");
   font-family: map-get($map: $font_families, $key: "second");
 }
@@ -20,27 +21,27 @@ li {
   list-style-type: none;
 }
 
-section {
-  @include breakpoint(mobilexs) {
-    padding: 0 10px 0 10px;
-  }
+// section {
+//   @include breakpoint(mobilexs) {
+//     padding: 0 10px 0 10px;
+//   }
 
-  @include breakpoint(mobile) {
-    padding: 0 15px 0 15px;
-  }
+//   @include breakpoint(mobile) {
+//     padding: 0 15px 0 15px;
+//   }
 
-  @include breakpoint(sm) {
-    padding: 0 30px 0 30px;
-  }
+//   @include breakpoint(sm) {
+//     padding: 0 30px 0 30px;
+//   }
 
-  @include breakpoint(md) {
-    padding: 0 120px 0 120px;
-  }
+//   @include breakpoint(md) {
+//     padding: 0 120px 0 120px;
+//   }
 
-  @include breakpoint(lg) {
-    padding: 0 360px 0 360px;
-  }
-}
+//   @include breakpoint(lg) {
+//     padding: 0 360px 0 360px;
+//   }
+// }
 
 header {
   nav {
