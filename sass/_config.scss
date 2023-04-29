@@ -1,0 +1,65 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: map-get($map: $oceanic, $key: "quaternary");
+  font-family: map-get($map: $font_families, $key: "second");
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  @include breakpoint(mobilexs) {
+    padding: 0 10px 0 10px;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 0 15px 0 15px;
+  }
+
+  @include breakpoint(sm) {
+    padding: 0 30px 0 30px;
+  }
+
+  @include breakpoint(md) {
+    padding: 0 120px 0 120px;
+  }
+
+  @include breakpoint(lg) {
+    padding: 0 360px 0 360px;
+  }
+}
+
+header {
+  nav {
+    @include breakpoint(md) {
+      padding: 0 120px 0 120px;
+    }
+
+    @include breakpoint(lg) {
+      padding: 0 120px 0 360px;
+    }
+  }
+}
+
+footer {
+  @include breakpoint(md) {
+    padding: 0 120px 0 120px;
+  }
+
+  @include breakpoint(lg) {
+    padding: 0 120px 0 360px;
+  }
+}

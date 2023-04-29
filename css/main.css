@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: #f1f1f1;
+  font-family: "Lato";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    padding: 0 10px 0 10px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 787px) {
+  section {
+    padding: 0 15px 0 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1109px) {
+  section {
+    padding: 0 30px 0 30px;
+  }
+}
+@media screen and (min-width: 1110px) and (max-width: 1499px) {
+  section {
+    padding: 0 120px 0 120px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  section {
+    padding: 0 360px 0 360px;
+  }
+}
+
+@media screen and (min-width: 1110px) and (max-width: 1499px) {
+  header nav {
+    padding: 0 120px 0 120px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  header nav {
+    padding: 0 120px 0 360px;
+  }
+}
+
+@media screen and (min-width: 1110px) and (max-width: 1499px) {
+  footer {
+    padding: 0 120px 0 120px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  footer {
+    padding: 0 120px 0 360px;
+  }
+}

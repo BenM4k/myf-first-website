@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+$font_weights : (
+  "thin": 100,
+  "small": 300,
+  "regular": 400,
+  "medium": 700,
+  "bold": 900
+);
+
+$font_families : (
+  "first": "COCOGOOSE",
+  "second": "Lato"
+);
+
+$oceanic : (
+  "primary": #1a1d4e,
+  "secondary": #30a9de,
+  "tertiary": #a2ded0,
+  "quaternary": #f1f1f1,
+);
+
+$nature : (
+  "primary": #034e44,
+  "secondary": #de7a22,
+  "tertiary": #f9baad,
+  "quaternary": #e8d7b5,
+);
+
+$vibrant : (
+  "primary": #ff004d,
+  "secondary": #00b0ff,
+  "tertiary": #b2ff59,
+  "quaternary": #ff007f,
+);
+
+$earthy : (
+  "primary": #556b2f,
+  "secondary": #e97451,
+  "tertiary": #e9c46a,
+  "quaternary": #8b5a2b,
+);
+
+$grayscale : (
+  "primary": #303030,
+  "secondary": #a5a5a5,
+  "tertiary": #f7f7f7,
+  "quaternary": #000000,
+);
+
+
+@mixin breakpoint($point) {
+  @if $point == lg {
+    @media screen and (min-width: 1500px) { @content; }
+  }
+
+  @else if $point == md {
+    @media screen and (min-width: 1110px) and (max-width: 1499px) { @content; }
+  }
+
+  @else if $point == sm {
+    @media screen and (min-width: 768px) and (max-width: 1109px) { @content; }
+  }
+
+  @else if $point == mobile {
+    @media screen and (min-width: 321px) and (max-width: 787px) { @content; }
+  }
+
+  @else if $point == mobilexs {
+    @media screen and (max-width: 320px) { @content; }
+  }
+}
+
+@mixin flex-center($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $orientation;
+}
+
+@mixin flex-start($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: $orientation;
+}
+
+@mixin flex-end($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: $orientation;
+}
+
+@mixin flex-space-between($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: $orientation;
+}
+
+@mixin flex-space-around($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: $orientation;
+}
