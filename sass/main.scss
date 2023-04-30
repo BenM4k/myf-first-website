@@ -1,4 +1,4 @@
-@import './variables', './responsive', './config', './headline';
+@import './variables', './responsive', './config', './headline', './about';
 
 header {
   width: 100%;
@@ -27,6 +27,27 @@ header {
         a {
           text-transform: uppercase;
           color: map-get($map: $oceanic, $key: "primary");
+        }
+        
+        &:hover {
+          background-color: map-get($map: $oceanic, $key: "primary");
+          box-shadow:
+          rgb(187 187 187 / 42%) 0 3px 18px 1px,
+          inset 1px -3px 5px 0 #cbcbcf;
+
+          a{
+            color: map-get($map: $oceanic, $key:"quaternary")
+          }
+        }
+        &:first-child {
+          background-color: map-get($map: $oceanic, $key: "primary");
+          box-shadow:
+          rgb(187 187 187 / 42%) 0 3px 18px 1px,
+          inset 1px -3px 5px 0 #cbcbcf;
+
+          a{
+            color: map-get($map: $oceanic, $key:"quaternary")
+          }
         }
       }
     }
