@@ -16,11 +16,11 @@ header {
             gap: 20px;
             height: 100%;
             li{
-                padding: 7px 12px;
+                padding: 12px 20px;
                 background: #ffffff;
-                border-radius: 13px;
-                box-shadow: 35px 2px 68px 3px rgba(160, 139, 177, 0.42), 
-                inset 0 -8px 16px 0 map-get($map: $oceanic, $key: "primary");
+                border-radius: 20px;
+                box-shadow: rgb(187 187 187 / 42%) 0px 3px 18px 1px, 
+                inset 0 -8px 16px 0 #bdbdc1;
                 a{
                     text-transform: uppercase;
                     color: map-get($map: $oceanic, $key: "primary");
@@ -28,4 +28,8 @@ header {
             }
         }
     }
+}
+
+footer {
+    @include flex-center(row)
 }

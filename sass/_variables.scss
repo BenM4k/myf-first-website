@@ -64,7 +64,7 @@ $grayscale : (
   }
 
   @else if $point == mobile {
-    @media screen and (min-width: 321px) and (max-width: 787px) { @content; }
+    @media screen and (min-width: 321px) and (max-width: 767px) { @content; }
   }
 
   @else if $point == mobilexs {
@@ -125,6 +125,13 @@ $grayscale : (
 @mixin flex-align-start($orientation) {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
+  flex-direction: $orientation;
+}
+
+@mixin flex-align-end($orientation) {
+  display: flex;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: $orientation;
 }
