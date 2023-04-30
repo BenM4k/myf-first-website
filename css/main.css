@@ -274,7 +274,7 @@ main .headline .presentation .perf {
   padding: 16px;
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: -9px 6px 13px 0px rgba(160, 139, 177, 0.42), inset 0 -8px 16px 0 #bdbdc1;
+  box-shadow: -9px 6px 13px 0 rgba(160, 139, 177, 0.42), inset 0 -8px 16px 0 #bdbdc1;
   width: 150px;
   height: 75px;
   display: flex;
@@ -289,6 +289,19 @@ main .headline .presentation .perf h2 {
 main .headline .socials {
   position: absolute;
   bottom: 150px;
+}
+main .headline .socials .social-media_icons {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+main .headline .socials .social-media_icons img {
+  height: 25px;
+  width: 25px;
 }
 main .headline .headline-photo {
   width: 100%;
@@ -330,22 +343,6 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   height: 70px;
   width: 70px;
 }
-main .headline .socials {
-  position: absolute;
-}
-main .headline .socials li {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-main .headline .socials li img {
-  height: 25px;
-  width: 25px;
-}
 
 header {
   width: 100%;
@@ -369,9 +366,9 @@ header nav ul {
 }
 header nav ul li {
   padding: 12px 20px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 20px;
-  box-shadow: rgba(187, 187, 187, 0.42) 0px 3px 18px 1px, inset 0 -8px 16px 0 #bdbdc1;
+  box-shadow: rgba(187, 187, 187, 0.42) 0 3px 18px 1px, inset 0 -8px 16px 0 #bdbdc1;
 }
 header nav ul li a {
   text-transform: uppercase;

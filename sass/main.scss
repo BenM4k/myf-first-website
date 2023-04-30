@@ -9,10 +9,6 @@ header {
 
     @include flex-start(row);
 
-    .logo{
-
-    }
-
     ul {
       @include flex-center(row);
 
@@ -38,4 +34,5 @@ header {
 }
 
 footer {
-  @include flex-center(row); }
+  @include flex-center(row);
+}
