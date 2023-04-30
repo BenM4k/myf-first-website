@@ -1,294 +1,321 @@
 @import './variables';
 
-@include breakpoint(md){ 
-    body {
-        header {
-            nav {
-                .logo {
-                }
-
-                ul {
-                    li {
-                        a {
-                            text-align: center;
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
+@include breakpoint(md) {
+  body {
+    header {
+      nav {
+        .logo {
         }
 
-        main {
-            height: 87%;
-            .headline {
-                padding-top:0;
-
-                .presentation {
-                    margin-top: 50px;
-                    margin-left: 110px;
-                    .title {
-
-                    }
-
-                    .perf {
-
-                    }
-                }
-
-                .socials {
-                    bottom: 70px;
-                    .social-media_icons {
-                        
-                    }
-                }
-
-                .headline-photo {
-                    margin-left: 135px;
-                    img {
-                        width: 565px;
-                        height: 580px;
-                    }
-
-                    .skills {
-                        li {
-                            .main-skill {
-
-                            }
-                        }
-                    }
-                }
+        ul {
+          li {
+            a {
+              text-align: center;
+              font-size: 12px;
             }
+          }
         }
-
-
+      }
     }
+
+    main {
+      height: 87%;
+
+      .headline {
+        padding-top: 0;
+
+        .presentation {
+          margin-top: 50px;
+          margin-left: 110px;
+
+          .title {
+
+          }
+
+          .perf {
+
+          }
+        }
+
+        .socials {
+          bottom: 70px;
+
+          .social-media_icons {
+
+          }
+        }
+
+        .headline-photo {
+          margin-left: 135px;
+
+          img {
+            width: 565px;
+            height: 580px;
+          }
+
+          .skills {
+            li {
+              .main-skill {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-@include breakpoint(sm){ 
-    body {
-        header {
-            nav {
-                .logo {
-                }
-
-                ul {
-                    li {
-                        a{
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
+@include breakpoint(sm) {
+  body {
+    header {
+      nav {
+        .logo {
         }
 
-        main {
-            .headline {
-                padding-top:75px;
-                .presentation {
-                    margin-left: 90px;
-                    .title {
-                        height: 95px;
-                        width: 190px;
-                        padding: 0 0 0 40px;
-                        h1 {
-                            @include title;
-                        }
-                    }
-
-                    .perf {
-                        width: 120px;
-                        h2 {
-                            font-size: 14px;
-                            text-align: center;
-                        }
-                    }
-                }
-
-                .headline-photo {
-                    margin-left: 40px;
-                    padding-bottom: 30px;
-                    @include flex-center(column);
-                    img {
-                        height: 545px;
-                        width: 500px;
-                    }
-
-                    .skills {
-                        @include flex-center(row);
-                        margin-top: 10px;
-                        gap: 55px;
-                        li {
-                            .main-skill {
-                                width: 50px;
-                                height: 50px;
-                            }
-
-                            &:nth-child(2){
-                                margin-left: 0;
-                                height: 150px;
-                                width: 150px;
-                            }
-
-                            &:nth-child(3){
-                                img {
-                                    height: 50px;
-                                    width: 50px;
-                                }
-                            }
-                        }
-                    }
-                }
+        ul {
+          li {
+            a {
+              font-size: 12px;
             }
+          }
         }
+      }
     }
+
+    main {
+      .headline {
+        padding-top: 75px;
+
+        .presentation {
+          margin-left: 90px;
+
+          .title {
+            height: 95px;
+            width: 190px;
+            padding: 0 0 0 40px;
+
+            h1 {
+              @include title;
+            }
+          }
+
+          .perf {
+            width: 120px;
+
+            h2 {
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+
+        .headline-photo {
+          margin-left: 40px;
+          padding-bottom: 30px;
+
+          @include flex-center(column);
+
+          img {
+            height: 545px;
+            width: 500px;
+          }
+
+          .skills {
+            @include flex-center(row);
+
+            margin-top: 10px;
+            gap: 55px;
+
+            li {
+              .main-skill {
+                width: 50px;
+                height: 50px;
+              }
+
+              &:nth-child(2) {
+                margin-left: 0;
+                height: 150px;
+                width: 150px;
+              }
+
+              &:nth-child(3) {
+                img {
+                  height: 50px;
+                  width: 50px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-@include breakpoint(mobile){ 
-    body {
-        header {
-            nav {
-                .logo {
-                }
+@include breakpoint(mobile) {
+  body {
+    header {
+      nav {
+        .logo {
+        }
 
-                ul {
-                    display: none;
-                    li {
-                        padding: 11px 12px;
-                        a{
-                            font-size: 12px;
-                        }
-                    }
-                }
+        ul {
+          display: none;
+
+          li {
+            padding: 11px 12px;
+
+            a {
+              font-size: 12px;
             }
+          }
         }
-
-        main {
-            height: 85%;
-            .headline {
-                padding-top:15px;
-                .presentation {
-                    margin-left: 15px;
-                    @include flex-align-start(column);
-                    gap: 7px;
-                    .title {
-                        width: 200px;
-                        height: 70px;
-                        h1 {
-                            font-size: 18px;
-                        }
-                    }
-
-                    .perf {
-                        width: 80px;
-                        height: 50px;
-                        h2 {
-                            font-size: 10px;
-                        }
-                    }
-                }
-
-                .socials {
-                    bottom: 175px;
-                }
-
-                .headline-photo {
-                    margin-left: 30px;
-                    @include flex-center(column);
-                    margin-top: 50px;
-                    img {
-                        width: 300px;
-                        height: 380px;
-                    }
-
-                    .skills {
-                        @include flex-center(row);
-                        margin-top: 0;
-                        padding-bottom: 30px;
-                        gap: 10px;
-                        li {
-                            width: 80px;
-                            height: 80px;
-                            .main-skill {
-                                width: 40px;
-                                height: 40px;
-                            }
-
-                            &:nth-child(2){
-                                margin-left: 0;
-                                height: 100px;
-                                width: 100px;
-                            }
-
-                            &:nth-child(3){
-                                img {
-                                    height: 40px;
-                                    width: 40px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        footer {
-            font-size: 15px;
-        }
+      }
     }
+
+    main {
+      height: 85%;
+
+      .headline {
+        padding-top: 15px;
+
+        .presentation {
+          margin-left: 15px;
+
+          @include flex-align-start(column);
+
+          gap: 7px;
+
+          .title {
+            width: 200px;
+            height: 70px;
+
+            h1 {
+              font-size: 18px;
+            }
+          }
+
+          .perf {
+            width: 80px;
+            height: 50px;
+
+            h2 {
+              font-size: 10px;
+            }
+          }
+        }
+
+        .socials {
+          bottom: 175px;
+        }
+
+        .headline-photo {
+          margin-left: 30px;
+
+          @include flex-center(column);
+
+          margin-top: 50px;
+
+          img {
+            width: 300px;
+            height: 380px;
+          }
+
+          .skills {
+            @include flex-center(row);
+
+            margin-top: 0;
+            padding-bottom: 30px;
+            gap: 10px;
+
+            li {
+              width: 80px;
+              height: 80px;
+
+              .main-skill {
+                width: 40px;
+                height: 40px;
+              }
+
+              &:nth-child(2) {
+                margin-left: 0;
+                height: 100px;
+                width: 100px;
+              }
+
+              &:nth-child(3) {
+                img {
+                  height: 40px;
+                  width: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      font-size: 15px;
+    }
+  }
 }
 
-@include breakpoint(mobilexs){ 
-    body {
-        header {
-            nav {
-                .logo {
-                    color: aliceblue;
-                }
-
-                ul {
-                    li {
-                        padding: 11px 12px;
-                        a{
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
+@include breakpoint(mobilexs) {
+  body {
+    header {
+      nav {
+        .logo {
+          color: aliceblue;
         }
 
-        main {
-            .headline {
-                padding-top:100px;
-                .presentation {
-                    .title {
+        ul {
+          li {
+            padding: 11px 12px;
 
-                    }
-
-                    .perf {
-
-                    }
-                }
-
-                .socials {
-                    .social-media_icons {
-                        
-                    }
-                }
-
-                .headline-photo {
-                    img {
-
-                    }
-
-                    .skills {
-                        li {
-                            .main-skill {
-
-                            }
-                        }
-                    }
-                }
+            a {
+              font-size: 12px;
             }
+          }
         }
+      }
     }
+
+    main {
+      .headline {
+        padding-top: 100px;
+
+        .presentation {
+          .title {
+
+          }
+
+          .perf {
+
+          }
+        }
+
+        .socials {
+          .social-media_icons {
+
+          }
+        }
+
+        .headline-photo {
+          img {
+
+          }
+
+          .skills {
+            li {
+              .main-skill {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

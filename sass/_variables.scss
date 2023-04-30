@@ -46,9 +46,8 @@ $grayscale : (
   "primary": #303030,
   "secondary": #a5a5a5,
   "tertiary": #f7f7f7,
-  "quaternary": #000000,
+  "quaternary": #000,
 );
-
 
 @mixin breakpoint($point) {
   @if $point == lg {
