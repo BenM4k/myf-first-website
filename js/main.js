@@ -218,3 +218,86 @@ for (let i = 0; i < exps.length; i += 1) {
     let skillDesc = displaySkillDesc(exps[i]);
     desc.innerHTML += skillDesc;
 }
+
+// spa
+const navHome = document.querySelector('.nav-home');
+const navAbout = document.querySelector('.nav-about');
+const navWork = document.querySelector('.nav-work');
+const navSkills = document.querySelector('.nav-skills');
+const navContact = document.querySelector('.nav-contact');
+
+const sectionHome = document.querySelector('.headline');
+const sectionAbout = document.querySelector('.about');
+const sectionWork = document.querySelector('.work');
+const sectionSkills = document.querySelector('.exp');
+const sectionContact = document.querySelector('.contacts');
+
+navHome.addEventListener('click', () => {
+    navHome.classList.add('active');
+    navAbout.classList.remove('active');
+    navWork.classList.remove('active');
+    navSkills.classList.remove('active');
+    navContact.classList.remove('active');
+
+    sectionHome.style.display = 'block';
+    sectionAbout.style.display = 'none';
+    sectionWork.style.display = 'none';
+    sectionSkills.style.display = 'none';
+    sectionContact.style.display = 'none';
+});
+
+navAbout.addEventListener('click', () => {
+    navHome.classList.remove('active');
+    navAbout.classList.add('active');
+    navWork.classList.remove('active');
+    navSkills.classList.remove('active');
+    navContact.classList.remove('active');
+
+    sectionHome.style.display = 'none';
+    sectionAbout.style.display = 'block';
+    sectionWork.style.display = 'none';
+    sectionSkills.style.display = 'none';
+    sectionContact.style.display = 'none';
+});
+
+navWork.addEventListener('click', () => {
+    navHome.classList.remove('active');
+    navAbout.classList.remove('active');
+    navWork.classList.add('active');
+    navSkills.classList.remove('active');
+    navContact.classList.remove('active');
+
+    sectionHome.style.display = 'none';
+    sectionAbout.style.display = 'none';
+    sectionWork.style.display = 'block';
+    sectionSkills.style.display = 'none';
+    sectionContact.style.display = 'none';
+});
+
+navSkills.addEventListener('click', () => {
+    navHome.classList.remove('active');
+    navAbout.classList.remove('active');
+    navWork.classList.remove('active');
+    navSkills.classList.add('active');
+    navContact.classList.remove('active');
+
+    sectionHome.style.display = 'none';
+    sectionAbout.style.display = 'none';
+    sectionWork.style.display = 'none';
+    sectionSkills.style.display = 'block';
+    sectionContact.style.display = 'none';
+});
+
+navContact.addEventListener('click', () => {
+    navHome.classList.remove('active');
+    navAbout.classList.remove('active');
+    navWork.classList.remove('active');
+    navSkills.classList.remove('active');
+    navContact.classList.add('active');
+
+    sectionHome.style.display = 'none';
+    sectionAbout.style.display = 'none';
+    sectionWork.style.display = 'none';
+    sectionSkills.style.display = 'none';
+    sectionContact.style.display = 'block';
+});
