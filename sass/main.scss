@@ -1,4 +1,4 @@
-@import './variables', './responsive', './config', './headline', './about';
+@import './variables', './responsive', './config', './headline', './about', './work';
 
 header {
   width: 100%;
@@ -39,6 +39,7 @@ header {
             color: map-get($map: $oceanic, $key:"quaternary")
           }
         }
+        
         &:first-child {
           background-color: map-get($map: $oceanic, $key: "primary");
           box-shadow:

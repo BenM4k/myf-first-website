@@ -8,6 +8,8 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 @media screen and (min-width: 1110px) and (max-width: 1499px) {
   body header nav ul li a {
     text-align: center;
@@ -348,6 +350,7 @@ main .headline .headline-photo .skills li:nth-child(3) img {
 }
 
 .about {
+  display: none;
   padding: 0 30px 0 30px;
   margin-top: 10px;
 }
@@ -384,6 +387,55 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   text-align: center;
   margin-top: 10px;
 }
+.work .work-title {
+  font-size: 36px;
+  color: #1a1d4e;
+  text-align: center;
+}
+.work .work-types {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.work .work-types li {
+  width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  background-color: #1a1d4e;
+  box-shadow: rgba(187, 187, 187, 0.42) 0 3px 18px 1px, inset 1px -3px 5px 0 #cbcbcf;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+.work .works {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  height: 200px;
+  gap: 10px;
+  width: 30%;
+}
+.work .works li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 10px;
+  position: relative;
+}
+.work .works li span {
+  position: absolute;
+  background: #fff;
+  bottom: 40px;
+}
+.work .works img {
+  width: 300px;
+  height: 220px;
+}
+
 header {
   width: 100%;
   height: 65px;
