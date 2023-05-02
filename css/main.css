@@ -387,7 +387,12 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   text-align: center;
   margin-top: 10px;
 }
+.work {
+  height: 100%;
+  width: 100%;
+}
 .work .work-title {
+  margin-top: 50px;
   font-size: 36px;
   color: #1a1d4e;
   text-align: center;
@@ -398,6 +403,7 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   justify-content: center;
   flex-direction: row;
   gap: 10px;
+  margin-top: 30px;
 }
 .work .work-types li {
   width: 100px;
@@ -408,14 +414,17 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   border-radius: 10px;
   color: #fff;
   text-align: center;
+  font-size: 12px;
 }
 .work .works {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
   height: 200px;
   gap: 10px;
-  width: 30%;
+  width: 100%;
 }
 .work .works li {
   display: flex;
@@ -423,6 +432,8 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   justify-content: center;
   flex-direction: column;
   background: #fff;
+  box-shadow: -6px 7px 15px 5px rgba(0, 0, 0, 0.13), inset 0 -8px 16px 0 #bdbdc1;
+  border-radius: 10px;
   padding: 10px;
   position: relative;
 }

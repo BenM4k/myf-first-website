@@ -60,7 +60,7 @@ const works = [
     },
     {
         img: "assets/about04.png",
-        title: "Coming soon",
+        title: "To-do List",
         type: "SPA",
         desc: "",
     },
@@ -91,7 +91,7 @@ function displayType(type){
     `;
     return typeList;
 }
-const typesList = [];
+const typesList = ['All'];
 
 for (let i = 0; i < works.length; i++) {
     const { type } = works[i];
