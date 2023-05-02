@@ -1,64 +1,70 @@
 @import './variables';
 
 .work {
-    display: none;
-    height: 100%;
+  display: none;
+  height: 100%;
+  width: 100%;
+
+  .work-title {
+    margin-top: 50px;
+
+    @include big-title;
+
+    text-align: center;
+  }
+
+  .work-types {
+    @include flex-center (row);
+
+    gap: 10px;
+    margin-top: 30px;
+
+    li {
+      width: 100px;
+      height: 50px;
+      padding: 10px 20px;
+      background-color: map-get($map: $oceanic, $key: "primary");
+      box-shadow:
+        rgb(187 187 187 / 42%) 0 3px 18px 1px,
+        inset 1px -3px 5px 0 #cbcbcf;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 200px;
+    gap: 10px;
     width: 100%;
 
-    .work-title {
-        margin-top: 50px;
-        @include big-title;
-        text-align: center;
+    li {
+      @include flex-center(column);
+
+      background: #fff;
+      box-shadow:
+        -6px 7px 15px 5px rgb(0 0 0 / 13%),
+        inset 0 -8px 16px 0 #bdbdc1;
+      border-radius: 10px;
+      padding: 10px;
+      position: relative;
+
+      span {
+        position: absolute;
+        background: #fff;
+        bottom: 40px;
+      }
     }
 
-    .work-types{
-        @include flex-center (row);
-        gap: 10px;
-        margin-top: 30px;
-        li {
-            width: 100px;
-            height: 50px;
-            padding: 10px 20px;
-            background-color: map-get($map: $oceanic, $key: "primary");
-            box-shadow:
-            rgb(187 187 187 / 42%) 0 3px 18px 1px,
-            inset 1px -3px 5px 0 #cbcbcf;
-            border-radius: 10px;
-            color: #fff;
-            text-align: center;
-            font-size: 12px;
-        }
+    img {
+      width: 300px;
+      height: 220px;
     }
-
-    .works {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        height: 200px;
-        gap: 10px;
-        width: 100%;
-
-        li{
-            @include flex-center(column);
-            background: #fff;
-            box-shadow:
-            -6px 7px 15px 5px rgb(0 0 0 / 13%),
-            inset 0 -8px 16px 0 #bdbdc1;
-            border-radius: 10px;
-            padding: 10px;
-            position: relative;
-
-            span {
-                position: absolute;
-                background: #fff;
-                bottom: 40px;
-            }
-        }
-        img {
-            width: 300px;
-            height: 220px;
-        }
-    }
+  }
 }

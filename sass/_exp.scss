@@ -1,55 +1,61 @@
 @import './variables';
 
 .exp {
-    display: none;
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  .exp-title {
+    @include big-title;
+
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .exp-img_container {
+    @include flex-center(row);
+
+    margin-top: 30px;
     width: 100%;
-    height: 100%;
+    height: auto;
+    gap: 70px;
 
-    .exp-title {
-        @include big-title;
-        margin-top: 50px;
-        text-align: center;
+    .exp-imgs {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+
+      li {
+        @include flex-center(column);
+
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow:
+          -6px 7px 15px 5px rgb(0 0 0 / 13%),
+          inset 0 -8px 16px 0 #bdbdc1;
+        width: 120px;
+        height: 120px;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
     }
 
-    .exp-img_container {
+    .exp-desc {
+      @include flex-center(column);
+
+      gap: 10px;
+      height: 100%;
+
+      li {
         @include flex-center(row);
-        margin-top: 30px;
-        width: 100%;
-        height: auto;
-        gap: 70px;
 
-        .exp-imgs {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 20px;
-
-            li {
-                @include flex-center(column);
-                border-radius: 50%;
-                overflow: hidden;
-                padding: 10px;
-                background-color: #fff;
-                box-shadow:
-                -6px 7px 15px 5px rgb(0 0 0 / 13%),
-                inset 0 -8px 16px 0 #bdbdc1;
-                width: 120px;
-                height: 120px;
-                img{
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
-
-        .exp-desc {
-            @include flex-center(column);
-            gap: 10px;
-            height: 100%;
-
-            li {
-                @include flex-center(row);
-                gap: 20px;
-            }
-        }
+        gap: 20px;
+      }
     }
+  }
 }

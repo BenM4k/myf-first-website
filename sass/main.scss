@@ -28,26 +28,26 @@ header {
           text-transform: uppercase;
           color: map-get($map: $oceanic, $key: "primary");
         }
-        
+
         &:hover {
           background-color: map-get($map: $oceanic, $key: "primary");
           box-shadow:
-          rgb(187 187 187 / 42%) 0 3px 18px 1px,
-          inset 1px -3px 5px 0 #cbcbcf;
+            rgb(187 187 187 / 42%) 0 3px 18px 1px,
+            inset 1px -3px 5px 0 #cbcbcf;
 
-          a{
-            color: map-get($map: $oceanic, $key:"quaternary")
+          a {
+            color: map-get($map: $oceanic, $key:"quaternary");
           }
         }
-        
+
         &.active {
           background-color: map-get($map: $oceanic, $key: "primary");
           box-shadow:
-          rgb(187 187 187 / 42%) 0 3px 18px 1px,
-          inset 1px -3px 5px 0 #cbcbcf;
+            rgb(187 187 187 / 42%) 0 3px 18px 1px,
+            inset 1px -3px 5px 0 #cbcbcf;
 
-          a{
-            color: map-get($map: $oceanic, $key:"quaternary")
+          a {
+            color: map-get($map: $oceanic, $key:"quaternary");
           }
         }
       }
