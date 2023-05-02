@@ -88,6 +88,52 @@
 
         <section class="contacts">
             <h2 class="contact-title">Take a coffee & Chat with me</h2>
+            <ul class="mobiles">
+                <li>
+                    <img src="" alt="">
+                    <p></p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p></p>
+                </li>
+            </ul>
+
+            <form action="https://formspree.io/f/xgebnwyd" method="POST" class="form" id="submit">
+                <ul class="form-list_container">
+                    <li class="form_list">
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="user_name" 
+                        placeholder="Full name" 
+                        minlength="2" 
+                        maxlength="30" 
+                        required>
+                    </li>
+                    <li class="form_list">
+                        <input 
+                        type="email" 
+                        name="user_email" 
+                        id="email" 
+                        placeholder="Email address" 
+                        required>
+                    </li>
+                    <li class="form_list">
+                        <textarea 
+                        name="user_message" 
+                        id="message" 
+                        placeholder="write something..." 
+                        minlength="2" 
+                        maxlength="500" 
+                        required></textarea>
+                    </li>
+                    <li class="form_button">
+                        <button type="submit" class="button_enabled">Get in touch</button>
+                        <small></small>
+                    </li>
+                </ul>
+            </form>
         </section>
     </main>
     

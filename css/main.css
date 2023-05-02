@@ -12,6 +12,8 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 @media screen and (min-width: 1110px) and (max-width: 1499px) {
   body header nav ul li a {
     text-align: center;
@@ -507,6 +509,60 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   justify-content: center;
   flex-direction: row;
   gap: 20px;
+}
+
+.contacts {
+  width: 100%;
+  height: 100%;
+}
+.contacts .contact-title {
+  margin-top: 50px;
+  font-size: 36px;
+  color: #1a1d4e;
+  text-align: center;
+}
+.contacts .form-list_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.contacts .form-list_container .form_list {
+  width: 60%;
+}
+.contacts .form-list_container .form_list input {
+  background-color: rgb(206, 204, 204);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+}
+.contacts .form-list_container .form_list textarea {
+  background-color: rgb(206, 204, 204);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+}
+.contacts .form-list_container .form_button {
+  background-color: #1a1d4e;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+.contacts .form-list_container .form_button button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+.contacts .form-list_container .form_button:hover {
+  box-shadow: rgba(187, 187, 187, 0.42) 0 3px 18px 1px, inset 1px -3px 5px 0 #cbcbcf;
+}
+.contacts .form-list_container .form_button:hover a {
+  color: #f1f1f1;
 }
 
 header {
