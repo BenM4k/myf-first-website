@@ -522,11 +522,35 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   color: #1a1d4e;
   text-align: center;
 }
+.contacts .mobiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 30px;
+}
+.contacts .mobiles li {
+  background: #fff;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+  border-radius: 10px;
+  box-shadow: -6px 7px 15px 5px rgba(0, 0, 0, 0.13), inset 0 -8px 16px 0 #bdbdc1;
+}
+.contacts .mobiles li img {
+  width: 50px;
+  height: 50px;
+}
 .contacts .form-list_container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 20px;
   width: 100%;
   gap: 20px;
 }
@@ -540,6 +564,9 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   width: 100%;
   padding: 15px;
 }
+.contacts .form-list_container .form_list input:focus {
+  outline: none;
+}
 .contacts .form-list_container .form_list textarea {
   background-color: rgb(206, 204, 204);
   border: none;
@@ -547,6 +574,9 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   width: 100%;
   height: 120px;
   padding: 15px;
+}
+.contacts .form-list_container .form_list textarea:focus {
+  outline: none;
 }
 .contacts .form-list_container .form_button {
   background-color: #1a1d4e;
@@ -576,6 +606,10 @@ header nav {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+}
+header nav .logo img {
+  width: 30px;
+  height: 30px;
 }
 header nav ul {
   display: flex;

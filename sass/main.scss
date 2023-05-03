@@ -6,8 +6,14 @@ header {
 
   nav {
     height: 100%;
-
     @include flex-start(row);
+
+    .logo {
+      img {
+        width: 30px;
+        height: 30px
+      }
+    }
 
     ul {
       @include flex-center(row);
