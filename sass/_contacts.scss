@@ -6,7 +6,7 @@
   height: 100%;
 
   .contact-title {
-    margin-top: 50px;
+    margin-top: 80px;
 
     @include big-title;
 
@@ -37,13 +37,18 @@
 
   .form-list_container {
     @include flex-center(column);
-    margin-top: 20px;
+    margin-top: 30px;
 
     width: 100%;
     gap: 20px;
 
+    .list1 {
+      @include flex-end(row);
+      gap: 10px;
+    }
+
     .form_list {
-      width: 60%;
+      width: 45%;
 
       input {
         background-color: rgb(206, 204, 204);

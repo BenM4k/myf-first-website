@@ -3,7 +3,7 @@
 .about {
   display: none;
   padding: 0 30px 0 30px;
-  margin-top: 10px;
+  margin-top: 80px;
 
   .about-title {
     @include big-title;
@@ -18,7 +18,7 @@
     margin-top: 60px;
 
     li {
-      width: 24%;
+      width: 17%;
       height: 400px;
       background: #fff;
       border-radius: 10px;

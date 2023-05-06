@@ -6,7 +6,7 @@
   width: 100%;
 
   .work-title {
-    margin-top: 50px;
+    margin-top: 80px;
 
     @include big-title;
 
@@ -20,17 +20,31 @@
     margin-top: 30px;
 
     li {
+      @include flex-center(row);
       width: 100px;
       height: 50px;
-      padding: 10px 20px;
-      background-color: map-get($map: $oceanic, $key: "primary");
+      color: map-get($map: $oceanic, $key: "primary");
       box-shadow:
         rgb(187 187 187 / 42%) 0 3px 18px 1px,
         inset 1px -3px 5px 0 #cbcbcf;
       border-radius: 10px;
-      color: #fff;
-      text-align: center;
-      font-size: 12px;
+      font-size: 14px;
+      font-weight: 600;
+
+      &:first-child{
+        background-color: map-get($map: $oceanic, $key: "primary");
+        color: #fff;
+      }
+      
+      &:hover{
+        background-color: map-get($map: $oceanic, $key: "primary");
+        color: #fff;
+      }
+
+      &.active{
+        background-color: map-get($map: $oceanic, $key: "primary");
+        color: #fff;
+      }
     }
   }
 
@@ -55,10 +69,16 @@
       padding: 10px;
       position: relative;
 
+      h2{
+        margin-top: 10px;
+      }
+
       span {
         position: absolute;
         background: #fff;
-        bottom: 40px;
+        bottom: 38px;
+        padding: 10px 20px;
+        border-radius: 5px;
       }
     }
 

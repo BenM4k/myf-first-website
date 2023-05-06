@@ -6,6 +6,8 @@
       nav {
         ul {
           li {
+
+            padding: 9px 10px;
             a {
               text-align: center;
               font-size: 12px;
@@ -19,25 +21,172 @@
       height: 87%;
 
       .headline {
-        padding-top: 0;
+        padding-top: 50px;
 
         .presentation {
           margin-top: 50px;
           margin-left: 110px;
+
+          .title {
+            overflow: hidden;
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+
+            h1 {
+              padding-left: 15px;
+              font-size: 24px;
+            }
+
+            span {
+              padding-left: 15px;
+            }
+          }
+
+          .perf {
+            width: 130px;
+            height: 60px;
+
+            h2 {
+              padding-left: 6px;
+              font-size: 18px;
+            }
+          }
         }
 
         .socials {
-          bottom: 70px;
+          bottom: 110px;
         }
 
         .headline-photo {
           margin-left: 135px;
 
           img {
-            width: 565px;
-            height: 580px;
+            width: 460px;
+            height: 480px;
+          }
+
+          .skills {
+            li{
+              height: 70px;
+              width: 70px;
+
+              &:nth-child(2) {
+                margin-left: 50px;
+                height: 110px;
+                width: 110px;
+              }
+
+              &:nth-child(3) {
+                height: 60px;
+                width: 60px;
+    
+                img {
+                  height: 40px;
+                  width: 40px;
+                }
+              }
+
+              img {
+                height: 50px;
+                width: 50px;
+              }
+            }
           }
         }
+      }
+
+      .about {
+        margin-top: 40px;
+
+        .about-skills {
+          margin-top: 40px;
+
+          li {
+            width: 20%;
+            height: 350px;
+
+            h2 {
+              font-size: 20px;
+            }
+
+            img {
+              height: 50%;
+            }
+          }
+        }
+      }
+
+      .work {
+        .work-title {
+          margin-top: 40px;
+        }
+
+        .work-types {
+          li {
+            width: 80px;
+            height: 40px;
+          }
+        }
+
+        .works {
+          li {
+            width: 210px;
+            overflow: hidden;
+
+            img {
+              height: 160px;
+              width: 95%;
+            }
+            span {
+              padding: 8px 15px;
+              font-size: 13px;
+            }
+            h2 {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+
+      .exp {
+        .exp-title {
+          margin-top: 40px;
+        }
+
+        .exp-img_container {
+          margin-top: 40px;
+
+          .exp-imgs {
+            li{
+              width: 100px;
+              height: 100px;
+
+              img {
+                width: 30px;
+                height: 30px;
+              }
+
+              p{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .contacts {
+        .contact-title {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+
+      p {
+        padding-left: 50px;
       }
     }
   }
