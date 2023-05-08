@@ -234,72 +234,43 @@ const sectionWork = document.querySelector('.work');
 const sectionSkills = document.querySelector('.exp');
 const sectionContact = document.querySelector('.contacts');
 
-navHome.addEventListener('click', () => {
-  navHome.classList.add('active');
-  navAbout.classList.remove('active');
-  navWork.classList.remove('active');
-  navSkills.classList.remove('active');
-  navContact.classList.remove('active');
+function displayPage(one, two, three, four, five) {
+  one.classList.add('active');
+  two.classList.remove('active');
+  three.classList.remove('active');
+  four.classList.remove('active');
+  five.classList.remove('active');
+}
 
-  sectionHome.style.display = 'block';
-  sectionAbout.style.display = 'none';
-  sectionWork.style.display = 'none';
-  sectionSkills.style.display = 'none';
-  sectionContact.style.display = 'none';
+function displaySection(one, two, three, four, five) {
+  one.style.display = 'block';
+  two.style.display = 'none';
+  three.style.display = 'none';
+  four.style.display = 'none';
+  five.style.display = 'none';
+}
+
+navHome.addEventListener('click', () => {
+  displayPage(navHome, navAbout, navContact, navSkills, navWork);
+  displaySection(sectionHome, sectionAbout, sectionContact, sectionSkills, sectionWork);
 });
 
 navAbout.addEventListener('click', () => {
-  navHome.classList.remove('active');
-  navAbout.classList.add('active');
-  navWork.classList.remove('active');
-  navSkills.classList.remove('active');
-  navContact.classList.remove('active');
-
-  sectionHome.style.display = 'none';
-  sectionAbout.style.display = 'block';
-  sectionWork.style.display = 'none';
-  sectionSkills.style.display = 'none';
-  sectionContact.style.display = 'none';
+  displayPage(navAbout, navHome, navContact, navSkills, navWork);
+  displaySection(sectionAbout, sectionHome, sectionContact, sectionSkills, sectionWork);
 });
 
 navWork.addEventListener('click', () => {
-  navHome.classList.remove('active');
-  navAbout.classList.remove('active');
-  navWork.classList.add('active');
-  navSkills.classList.remove('active');
-  navContact.classList.remove('active');
-
-  sectionHome.style.display = 'none';
-  sectionAbout.style.display = 'none';
-  sectionWork.style.display = 'block';
-  sectionSkills.style.display = 'none';
-  sectionContact.style.display = 'none';
+  displayPage(navWork, navAbout, navContact, navSkills, navHome);
+  displaySection(sectionWork, sectionAbout, sectionContact, sectionSkills, sectionHome);
 });
 
 navSkills.addEventListener('click', () => {
-  navHome.classList.remove('active');
-  navAbout.classList.remove('active');
-  navWork.classList.remove('active');
-  navSkills.classList.add('active');
-  navContact.classList.remove('active');
-
-  sectionHome.style.display = 'none';
-  sectionAbout.style.display = 'none';
-  sectionWork.style.display = 'none';
-  sectionSkills.style.display = 'block';
-  sectionContact.style.display = 'none';
+  displayPage(navSkills, navAbout, navContact, navHome, navWork);
+  displaySection(sectionSkills, sectionAbout, sectionContact, sectionHome, sectionWork);
 });
 
 navContact.addEventListener('click', () => {
-  navHome.classList.remove('active');
-  navAbout.classList.remove('active');
-  navWork.classList.remove('active');
-  navSkills.classList.remove('active');
-  navContact.classList.add('active');
-
-  sectionHome.style.display = 'none';
-  sectionAbout.style.display = 'none';
-  sectionWork.style.display = 'none';
-  sectionSkills.style.display = 'none';
-  sectionContact.style.display = 'block';
+  displayPage(navContact, navAbout, navHome, navSkills, navWork);
+  displaySection(sectionContact, sectionAbout, sectionHome, sectionSkills, sectionWork);
 });
