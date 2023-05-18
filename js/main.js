@@ -234,43 +234,39 @@ const sectionWork = document.querySelector('.work');
 const sectionSkills = document.querySelector('.exp');
 const sectionContact = document.querySelector('.contacts');
 
-function displayPage(one, two, three, four, five) {
-  one.classList.add('active');
-  two.classList.remove('active');
-  three.classList.remove('active');
-  four.classList.remove('active');
-  five.classList.remove('active');
+function displayPage(sections, current) {
+  sections.forEach((section) => {
+    section.classList.remove ('active');
+  })
+  current.classList.add('active');
 }
 
-function displaySection(one, two, three, four, five) {
-  one.style.display = 'block';
-  two.style.display = 'none';
-  three.style.display = 'none';
-  four.style.display = 'none';
-  five.style.display = 'none';
+function displaySection(sections, current) {
+  sections.forEach((section) => {
+    section.style.display = 'none';
+  })
+  current.style.display = 'block';
 }
+
+
 
 navHome.addEventListener('click', () => {
-  displayPage(navHome, navAbout, navContact, navSkills, navWork);
-  displaySection(sectionHome, sectionAbout, sectionContact, sectionSkills, sectionWork);
+  displayPage([navHome, navAbout, navContact, navSkills, navWork], navHome);
+  displaySection([sectionHome, sectionAbout, sectionContact, sectionSkills, sectionWork], sectionHome);
 });
-
 navAbout.addEventListener('click', () => {
-  displayPage(navAbout, navHome, navContact, navSkills, navWork);
-  displaySection(sectionAbout, sectionHome, sectionContact, sectionSkills, sectionWork);
+  displayPage([navHome, navAbout, navContact, navSkills, navWork], navAbout);
+  displaySection([sectionHome, sectionAbout, sectionContact, sectionSkills, sectionWork], sectionAbout);
 });
-
-navWork.addEventListener('click', () => {
-  displayPage(navWork, navAbout, navContact, navSkills, navHome);
-  displaySection(sectionWork, sectionAbout, sectionContact, sectionSkills, sectionHome);
-});
-
-navSkills.addEventListener('click', () => {
-  displayPage(navSkills, navAbout, navContact, navHome, navWork);
-  displaySection(sectionSkills, sectionAbout, sectionContact, sectionHome, sectionWork);
-});
-
 navContact.addEventListener('click', () => {
-  displayPage(navContact, navAbout, navHome, navSkills, navWork);
-  displaySection(sectionContact, sectionAbout, sectionHome, sectionSkills, sectionWork);
+  displayPage([navHome, navAbout, navContact, navSkills, navWork], navContact);
+  displaySection([sectionHome, sectionAbout, sectionContact, sectionSkills, sectionWork], sectionContact);
+});
+navSkills.addEventListener('click', () => {
+  displayPage([navHome, navAbout, navContact, navSkills, navWork], navSkills);
+  displaySection([sectionHome, sectionAbout, sectionContact, sectionSkills, sectionWork], sectionSkills);
+});
+navWork.addEventListener('click', () => {
+  displayPage([navHome, navAbout, navContact, navSkills, navWork], navWork);
+  displaySection([sectionHome, sectionAbout, sectionContact, sectionSkills, sectionWork], sectionWork);
 });
