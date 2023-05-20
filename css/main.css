@@ -118,6 +118,7 @@
   body main .work .works li span {
     padding: 8px 15px;
     font-size: 13px;
+    bottom: 145px;
   }
   body main .work .works li h2 {
     font-size: 17px;
@@ -210,17 +211,8 @@
   }
 }
 @media screen and (min-width: 321px) and (max-width: 767px) {
-  body header nav ul {
+  body header {
     display: none;
-  }
-  body header nav ul li {
-    padding: 11px 12px;
-  }
-  body header nav ul li a {
-    font-size: 12px;
-  }
-  body main {
-    height: 85%;
   }
   body main .headline {
     padding-top: 15px;
@@ -248,19 +240,26 @@
     font-size: 10px;
   }
   body main .headline .socials {
-    bottom: 175px;
+    bottom: 182px;
+    height: auto;
+  }
+  body main .headline .socials .social-media_icons {
+    height: auto;
+  }
+  body main .headline .socials .social-media_icons a {
+    margin-top: 10px;
   }
   body main .headline .headline-photo {
-    margin-left: 30px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 115px;
   }
   body main .headline .headline-photo img {
-    width: 300px;
-    height: 380px;
+    width: 355px;
+    height: 405px;
   }
   body main .headline .headline-photo .skills {
     display: flex;
@@ -288,22 +287,303 @@
     height: 40px;
     width: 40px;
   }
+  body main .about {
+    display: block;
+    margin-top: 40px;
+  }
+  body main .about .about-title {
+    font-size: 24px;
+  }
+  body main .about .about-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  body main .about .about-skills li {
+    width: auto;
+    height: 420px;
+  }
+  body main .about .about-skills li h2 {
+    font-size: 20px;
+  }
+  body main .about .about-skills li img {
+    height: 50%;
+  }
+  body main .work {
+    display: block;
+    height: auto;
+  }
+  body main .work .work-title {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  body main .work .work-types li {
+    width: 80px;
+    height: 40px;
+  }
+  body main .work .works {
+    height: auto;
+  }
+  body main .work .works li {
+    width: 305px;
+    overflow: hidden;
+  }
+  body main .work .works li img {
+    height: 160px;
+    width: 95%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .work .works li span {
+    padding: 8px 15px;
+    font-size: 13px;
+    bottom: 145px;
+  }
+  body main .work .works li h2 {
+    font-size: 17px;
+  }
+  body main .exp {
+    display: block;
+  }
+  body main .exp .exp-title {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  body main .exp .exp-img_container {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  body main .exp .exp-img_container .exp-imgs {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main .exp .exp-img_container .exp-imgs li {
+    width: 100px;
+    height: 100px;
+  }
+  body main .exp .exp-img_container .exp-imgs li img {
+    width: 30px;
+    height: 30px;
+  }
+  body main .exp .exp-img_container .exp-imgs li p {
+    font-size: 12px;
+  }
+  body main .contacts {
+    display: block;
+  }
+  body main .contacts .contact-title {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  body main .contacts .mobiles {
+    flex-direction: column-reverse;
+  }
+  body main .contacts .form .form-list_container {
+    padding: 15px;
+  }
+  body main .contacts .form .form-list_container .list1 {
+    flex-direction: column;
+  }
+  body main .contacts .form .form-list_container .form_list {
+    width: 100%;
+  }
   body footer {
-    font-size: 15px;
+    margin-top: 50px;
+    padding-left: 0;
+    width: 100%;
+    position: relative;
+  }
+  body footer p {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 320px) {
-  body header nav .logo {
-    color: aliceblue;
-  }
-  body header nav ul li {
-    padding: 11px 12px;
-  }
-  body header nav ul li a {
-    font-size: 12px;
+  body header {
+    display: none;
   }
   body main .headline {
-    padding-top: 100px;
+    padding-top: 15px;
+  }
+  body main .headline .presentation {
+    margin-left: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+  }
+  body main .headline .presentation .title {
+    width: 200px;
+    height: 70px;
+  }
+  body main .headline .presentation .title h1 {
+    font-size: 18px;
+  }
+  body main .headline .presentation .perf {
+    width: 80px;
+    height: 50px;
+  }
+  body main .headline .presentation .perf h2 {
+    font-size: 10px;
+  }
+  body main .headline .socials {
+    bottom: 99px;
+    height: auto;
+  }
+  body main .headline .socials .social-media_icons {
+    height: auto;
+  }
+  body main .headline .socials .social-media_icons a {
+    margin-top: 10px;
+  }
+  body main .headline .headline-photo {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  body main .headline .headline-photo img {
+    width: 255px;
+    height: 285px;
+  }
+  body main .headline .headline-photo .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0;
+    padding-bottom: 30px;
+    gap: 10px;
+  }
+  body main .headline .headline-photo .skills li {
+    width: 80px;
+    height: 80px;
+  }
+  body main .headline .headline-photo .skills li .main-skill {
+    width: 40px;
+    height: 40px;
+  }
+  body main .headline .headline-photo .skills li:nth-child(2) {
+    margin-left: 0;
+    height: 100px;
+    width: 100px;
+  }
+  body main .headline .headline-photo .skills li:nth-child(3) img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .about {
+    display: block;
+    margin-top: 40px;
+  }
+  body main .about .about-title {
+    font-size: 24px;
+  }
+  body main .about .about-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  body main .about .about-skills li {
+    width: auto;
+    height: 420px;
+  }
+  body main .about .about-skills li h2 {
+    font-size: 20px;
+  }
+  body main .about .about-skills li img {
+    height: 50%;
+  }
+  body main .work {
+    display: block;
+    height: auto;
+  }
+  body main .work .work-title {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  body main .work .work-types li {
+    width: 80px;
+    height: 40px;
+  }
+  body main .work .works {
+    height: auto;
+  }
+  body main .work .works li {
+    width: 210px;
+    overflow: hidden;
+  }
+  body main .work .works li img {
+    height: 160px;
+    width: 95%;
+  }
+  body main .work .works li span {
+    padding: 8px 15px;
+    font-size: 13px;
+    bottom: 145px;
+  }
+  body main .work .works li h2 {
+    font-size: 17px;
+  }
+  body main .exp {
+    display: block;
+  }
+  body main .exp .exp-title {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  body main .exp .exp-img_container {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  body main .exp .exp-img_container .exp-imgs {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main .exp .exp-img_container .exp-imgs li {
+    width: 100px;
+    height: 100px;
+  }
+  body main .exp .exp-img_container .exp-imgs li img {
+    width: 30px;
+    height: 30px;
+  }
+  body main .exp .exp-img_container .exp-imgs li p {
+    font-size: 12px;
+  }
+  body main .contacts {
+    display: block;
+  }
+  body main .contacts .contact-title {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  body main .contacts .mobiles {
+    flex-direction: column-reverse;
+  }
+  body main .contacts .form .form-list_container {
+    padding: 15px;
+  }
+  body main .contacts .form .form-list_container .list1 {
+    flex-direction: column;
+  }
+  body main .contacts .form .form-list_container .form_list {
+    width: 100%;
+  }
+  body footer {
+    margin-top: 50px;
+    padding-left: 0;
+    width: 100%;
+    position: relative;
+  }
+  body footer p {
+    font-size: 10px;
   }
 }
 * {
@@ -323,17 +603,6 @@ a {
 
 li {
   list-style-type: none;
-}
-
-@media screen and (min-width: 1110px) and (max-width: 1499px) {
-  header nav {
-    padding: 0 120px 0 120px;
-  }
-}
-@media screen and (min-width: 1500px) {
-  header nav {
-    padding: 0 120px 0 360px;
-  }
 }
 
 @media screen and (min-width: 1110px) and (max-width: 1499px) {
@@ -479,9 +748,10 @@ main .headline .headline-photo .skills li:nth-child(3) img {
 }
 .about .about-skills li {
   width: 17%;
-  height: 400px;
+  height: 420px;
   background: #fff;
   border-radius: 10px;
+  padding-bottom: 10px;
   box-shadow: -6px 7px 15px 5px rgba(0, 0, 0, 0.13), inset 0 -8px 16px 0 #bdbdc1;
   overflow: hidden;
 }
@@ -491,8 +761,14 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   width: 100%;
   height: 220px;
 }
+.about .about-skills li p {
+  padding: 10px;
+  height: 120px;
+  overflow: hidden;
+  margin-top: 10px;
+}
 .about .about-skills li h2 {
-  font-size: 24px;
+  font-size: 18px;
   color: #1a1d4e;
   text-align: center;
   margin-top: 10px;
@@ -557,6 +833,9 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
+  width: 250px;
+  gap: 10px;
   background: #fff;
   box-shadow: -6px 7px 15px 5px rgba(0, 0, 0, 0.13), inset 0 -8px 16px 0 #bdbdc1;
   border-radius: 10px;
@@ -566,16 +845,21 @@ main .headline .headline-photo .skills li:nth-child(3) img {
 .work .works li h2 {
   margin-top: 10px;
 }
+.work .works li p {
+  overflow: hidden;
+  width: 95%;
+  height: 90px;
+}
 .work .works li span {
   position: absolute;
   background: #fff;
-  bottom: 38px;
+  bottom: 155px;
   padding: 10px 20px;
   border-radius: 5px;
 }
 .work .works img {
-  width: 300px;
-  height: 220px;
+  width: 100%;
+  height: 40%;
 }
 
 .exp {
@@ -688,7 +972,7 @@ main .headline .headline-photo .skills li:nth-child(3) img {
   gap: 10px;
 }
 .contacts .form-list_container .form_list {
-  width: 45%;
+  width: 35%;
 }
 .contacts .form-list_container .form_list input {
   background-color: rgb(206, 204, 204);
@@ -736,10 +1020,7 @@ header {
 }
 header nav {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
+  width: 100%;
 }
 header nav .logo img {
   width: 30px;
@@ -753,6 +1034,7 @@ header nav ul {
   flex: 1;
   gap: 20px;
   height: 100%;
+  width: 100%;
 }
 header nav ul li {
   display: flex;

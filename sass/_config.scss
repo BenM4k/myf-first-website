@@ -20,17 +20,6 @@ li {
   list-style-type: none;
 }
 
-header {
-  nav {
-    @include breakpoint(md) {
-      padding: 0 120px 0 120px;
-    }
-
-    @include breakpoint(lg) {
-      padding: 0 120px 0 360px;
-    }
-  }
-}
 
 footer {
   @include breakpoint(md) {
